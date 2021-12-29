@@ -19,3 +19,13 @@ Enter the height: 3
 """
 
 #write your code here 
+base = int(input("Enter the base: "))
+height = int(input("Enter the height: "))
+
+while base <= 0 or height <= 0:
+  print("That's not a valid entry. Try again.")
+  base = int(input("Enter the base: "))
+  height = int(input("Enter the height: "))
+
+for i in range(1, height + 1):
+  print('*' * base)
